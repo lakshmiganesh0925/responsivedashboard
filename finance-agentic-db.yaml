@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+
+metadata:
+  name: finance-agentic-db
+  description: Database resource supporting finance agent workflows, transactions, configurations, and reporting data
+  tags:
+    - database
+    - finance
+    - ai
+
+spec:
+  type: database
+  lifecycle: experimental
+  owner: group:finance-agentic-team
+  system: finance-agentic-system
