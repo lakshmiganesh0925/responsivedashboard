@@ -1,0 +1,82 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+
+metadata:
+  name: finance-member-1
+
+spec:
+  memberOf:
+    - finance-agentic-team
+  profile:
+    displayName: Finance Member 1
+    email: finance-member-1@example.com
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+
+metadata:
+  name: finance-member-2
+
+spec:
+  memberOf:
+    - finance-agentic-team
+  profile:
+    displayName: Finance Member 2
+    email: finance-member-2@example.com
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+
+metadata:
+  name: finance-member-3
+
+spec:
+  memberOf:
+    - finance-agentic-team
+  profile:
+    displayName: Finance Member 3
+    email: finance-member-3@example.com
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+
+metadata:
+  name: finance-member-4
+
+spec:
+  memberOf:
+    - finance-agentic-team
+  profile:
+    displayName: Finance Member 4
+    email: finance-member-4@example.com
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+
+metadata:
+  name: finance-member-5
+
+spec:
+  memberOf:
+    - finance-agentic-team
+  profile:
+    displayName: Finance Member 5
+    email: finance-member-5@example.com
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+
+metadata:
+  name: finance-member-6
+
+spec:
+  memberOf:
+    - finance-agentic-team
+  profile:
+    displayName: Finance Member 6
+    email: finance-member-6@example.com
