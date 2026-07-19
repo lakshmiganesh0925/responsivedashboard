@@ -1,0 +1,73 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+
+metadata:
+  name: finance-agentic-orchestrator-api
+  description: API for Finance Agentic Orchestrator handling AI agents, workflow orchestration, financial automation, and reporting
+  tags:
+    - rest
+    - finance
+    - agentic-ai
+    - automation
+
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: group:finance-agentic-team
+  system: finance-agentic-system
+
+  definition: |
+    openapi: 3.0.0
+
+    info:
+      title: Finance Agentic Orchestrator API
+      version: '1.0'
+
+    paths:
+
+      /agents/orchestrate:
+        post:
+          summary: Start finance agent orchestration workflow
+          responses:
+            '202':
+              description: Agent workflow started successfully
+
+      /agents/status/{workflowId}:
+        get:
+          summary: Get agent workflow execution status
+          parameters:
+            - name: workflowId
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Workflow status returned successfully
+
+      /transactions:
+        post:
+          summary: Process financial transaction
+          responses:
+            '201':
+              description: Transaction processed successfully
+
+      /reports/financial:
+        get:
+          summary: Generate financial reports
+          responses:
+            '200':
+              description: Financial report generated successfully
+
+      /invoices/{invoiceId}:
+        get:
+          summary: Retrieve invoice details
+          parameters:
+            - name: invoiceId
+              in: path
+              required: true
+              schema:
+                type: string
+          responses:
+            '200':
+              description: Invoice details returned successfully
