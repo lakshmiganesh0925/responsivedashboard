@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: finance-agentic-system
+  description: Agentic AI system for finance workflows including orchestration, AI agents, tool calling, automation, and financial operations
+  annotations:
+    backstage.io/techdocs-ref: dir:../../docs
+  links:
+    - url: https://github.com/<your-org>/finance-agentic-system
+      title: Source Repository
+  tags:
+    - finance
+    - agentic-ai
+    - artificial-intelligence
+    - automation
+
+spec:
+  owner: group:finance-agentic-team
+  domain: finance
