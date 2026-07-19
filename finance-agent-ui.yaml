@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: finance-agent-ui
+  description: User interface for interacting with finance AI agents and workflow dashboards
+  tags:
+    - frontend
+    - ui
+    - ai
+
+spec:
+  type: website
+  lifecycle: experimental
+  owner: group:finance-agentic-team
+  system: finance-agentic-system
