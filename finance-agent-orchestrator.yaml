@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: finance-agent-orchestrator
+  description: AI agent orchestration service for finance workflows, automation, and tool-calling operations
+  tags:
+    - backend
+    - ai
+    - agentic-ai
+    - orchestration
+
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:finance-agentic-team
+  system: finance-agentic-system
+  providesApis:
+    - finance-agentic-orchestrator-api
