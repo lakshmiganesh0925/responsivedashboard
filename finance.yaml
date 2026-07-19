@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: finance
+  description: Finance business domain covering financial workflows, agentic AI orchestration, payments, reporting, and automation
+  tags:
+    - finance
+    - agentic-ai
+    - automation
+
+spec:
+  owner: group:finance-agentic-team
