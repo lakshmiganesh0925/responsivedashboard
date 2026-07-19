@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+
+metadata:
+  name: finance-agentic-aks
+  description: Azure Kubernetes Service cluster hosting finance agentic AI workloads and services
+  tags:
+    - azure
+    - kubernetes
+    - aks
+    - finance
+    - ai
+
+spec:
+  type: kubernetes-cluster
+  lifecycle: experimental
+  owner: group:finance-agentic-team
+  system: finance-agentic-system
